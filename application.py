@@ -22,7 +22,7 @@ def main():
 
     with st.sidebar:
         st.subheader("Upload PDF/PDFs")
-        pdf_docs = st.file_uploader("You can upload multiple PDFs", 
+        pdf_docs = st.file_uploader("Upload and click on 'Process' (You can upload multiple PDFs)", 
                                     accept_multiple_files=True)
         if st.button("Process"):
             with st.spinner("Processing..."):
