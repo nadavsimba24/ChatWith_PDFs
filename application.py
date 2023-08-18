@@ -16,6 +16,7 @@ def main():
 
     st.header("Chat with PDFs")
     st.subheader("Upload one or multiple PDFs and ask questions based on the PDF content.")
+    st.text("* If you are using a mobile device, upload pdf by clicking on the top left arrow ")
     user_question = st.text_input("Ask your questions here:")
     if user_question:
         handle_userinput(user_question)
