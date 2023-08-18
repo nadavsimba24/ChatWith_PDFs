@@ -4,7 +4,7 @@ Chat_PDF is a Python web application hosted on Streamlit, designed to empower us
 
 ## Give It a Try
 
-To experience the capabilities of Chat_PDF firsthand, simply navigate to [this link](https://chatwithpdfs.streamlit.app/)) and dive into the interactive world of PDF-based conversations.
+🔗 To experience the capabilities of Chat_PDF firsthand, simply navigate to [this link](https://chatwithpdfs.streamlit.app/) and dive into the interactive world of PDF-based conversations.
 
 ## Libraries Utilized
 
