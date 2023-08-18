@@ -24,7 +24,7 @@ def main():
         st.subheader("Upload PDF/PDFs")
         pdf_docs = st.file_uploader("You can upload multiple PDFs", 
                                     accept_multiple_files=True)
-        if st.button("Upload and Process"):
+        if st.button("Process"):
             with st.spinner("Processing..."):
                 # get pdf text
                 raw_text = get_pdf_text(pdf_docs)
