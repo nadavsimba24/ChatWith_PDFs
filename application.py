@@ -5,7 +5,7 @@ from util import *
 
 def main():
     load_dotenv()
-    st.set_page_config(page_title="Chat with PDFs")
+    st.set_page_config(page_title="אופיס לייט")
     
     st.write(css, unsafe_allow_html=True)
 
@@ -14,10 +14,10 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.header("Chat with PDFs")
-    st.subheader("Upload one or multiple PDFs and ask questions based on the PDF content.")
+    st.header("אופיס לייט  ")
+    st.subheader("Upload  multiple PDFs and ask questions based on the PDF content.")
     st.text("* If you are using a mobile device, upload pdf by clicking on the top left arrow ")
-    user_question = st.text_input("Ask your questions here:")
+    user_question = st.text_input("תוכל לשאול שאלות כאן")
     if user_question:
         handle_userinput(user_question)
 
@@ -25,7 +25,7 @@ def main():
         st.subheader("Upload PDF/PDFs")
         pdf_docs = st.file_uploader("Upload and click on 'Process' (You can upload multiple PDFs)", 
                                     accept_multiple_files=True)
-        if st.button("Process"):
+        if st.button("העלאה"):
             with st.spinner("Processing..."):
                 # get pdf text
                 raw_text = get_pdf_text(pdf_docs)
